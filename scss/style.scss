@@ -1,0 +1,547 @@
+$brand:'Anton', sans-serif;
+$logo-size:40px;
+$bars:25px;
+$color2:rgb(220, 20, 130);
+$color1:rgb(240, 0, 112);
+$color3:rgb(255, 255, 255);
+$color4:rgb(2, 62, 175);
+$color5:rgb(255, 187, 0);
+$body-text: Arial;
+$navlink-font:'Balsamiq Sans', cursive;
+$home-pic-h1: 'Bangers', cursive;
+$title:'Rammetto One', cursive;
+
+html{
+    scroll-behavior: smooth;
+}
+body{
+    overflow-x: hidden;
+}
+#home{
+    background: linear-gradient(to right bottom, rgba(255, 0, 221, 0.9) 30%, rgba(195, 0, 255, 0.7)30%,rgba(255, 0, 242, 0.4)70%,rgba(255, 0, 221, 0.8)70%), url(../img/5.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+}
+.h2{
+    font-family: $home-pic-h1;
+    font-weight: 600;
+    letter-spacing: 4px;
+    color: rgb(100, 56, 93);
+    padding-top: 3rem;
+    font-size: 4rem;
+}
+#home1{
+ 
+    background:linear-gradient(to right bottom, rgba(0, 174, 255, 0.9) 30%, rgba(0, 174, 255, 0.7)30%,rgba(0, 174, 255, 0.4)50%,rgba(0, 174, 255, 0.8)50%), url(../img/1.jpg);
+    background-attachment: fixed;
+    .h1{
+    font-family: $home-pic-h1;
+    font-weight: 600;
+    letter-spacing: 4px;
+    color: rgb(69, 56, 100);
+    padding-top: 3rem;
+    font-size: 5rem;
+    
+}
+}
+.title{
+font-family: $home-pic-h1;
+font-size: 4rem;
+padding: 2rem 0;
+color: $color5;
+}
+.navbar-brand{
+    font-family: $brand;
+    font-size: $logo-size;
+    color: $color2;
+    }
+.fa-bars{
+  
+    font-size: 0;
+    color: whitesmoke;
+    &:hover{
+        color:#fff;
+    }
+}
+#nav{
+    width: 45%;
+    list-style: none;
+    justify-content: space-between;
+   
+ li a.active, a.nav-link{
+        position: relative;
+        color: $color1;
+        font-family: $navlink-font;
+        font-weight: 600;
+        font-size: 18px;
+        z-index: 0;
+        margin: 4px 0;
+        transition: all 2s;
+        &::before{
+            position: absolute;
+            content: "";
+            top: 0;
+            left: 0;
+            width: 0%;
+            z-index: -4 ;
+            height: 100%;
+            border-radius: 4px;
+            background: none ;
+            border-bottom: $color3 6px solid;
+            transition: all 2s;
+       
+            transform: scaleX(1);
+            transform-origin: left;
+         }
+         &:hover::before{
+                
+            transform: scaleX(1);
+           width: 100%;
+           z-index: -4 ;
+        }
+        &:hover{
+            color: $color1;
+        }
+
+}
+    li a.active{
+        color: $color3;
+        position: relative;
+        transition: all 0.5s ease-in;
+        border: 0;
+        &::before{
+            position: absolute;
+            content: "";
+            top: 0;
+            left: 0;
+            width:100% !important;
+            height: 100%;
+            background: none ;
+            border-bottom: $color3 6px solid;
+            transition: all 2s;
+       
+            transform: scaleX(1);
+            transform-origin: left;
+         }
+        
+         
+      
+      }
+}
+
+.color{
+    .q{
+      justify-content: space-between;
+    }
+    .color #nav{
+        display:  flex;
+        width: 50%;
+        list-style: none;
+        justify-content: space-between;
+       
+     li a.active, a.nav-link{
+            position: relative;
+            color: $color1;
+            font-family: $navlink-font;
+            font-weight: 600;
+            font-size: 18px;
+            z-index: 1;
+            margin: 4px 0;
+            transition: all 2s;
+            &::before{
+                position: absolute;
+                content: "";
+                top: 0;
+                left: 0;
+                width: 0%;
+                z-index: -4 ;
+                height: 100%;
+                border-radius: 4px;
+                background: none ;
+                border-bottom: $color3 6px solid;
+                transition: all 2s;
+           
+                transform: scaleX(1);
+                transform-origin: left;
+             }
+             &:hover::before{
+                    
+                transform: scaleX(1);
+               width: 100%;
+               z-index: -4 ;
+            }
+    
+    }}
+}
+// #Team{
+//     margin-top: 78rem;
+//     padding: 67rem 0;
+// }
+.color{
+    background:repeating-linear-gradient(to left,rgb(255, 255, 255)10%,rgb(205, 208, 250)50%);
+    transition: background 1s ease-in-out;
+    li a.active,.nav-link:hover{
+        color: $color4 !important;
+        position: relative;
+        transition: all 0.5s ease-in;
+        border: 0;
+        &::before{
+            position: absolute;
+            content: "";
+            top: -1px;
+            
+            left: 0;
+            width:100%;
+            height: 100%;
+            background-color: rgb(70, 214, 250);
+            border-bottom: $color4 solid 6px !important;
+            transition: all 2s;
+       
+            transform: scaleX(1);
+            transform-origin: left;
+         }}
+  
+     }
+
+.btn-outline-color1{
+border: $color5 1.5px solid;
+color: $color5;
+transition: all 0.5;
+&:hover{
+background: $color5;
+color: #fff;
+}
+}   
+
+
+.card{
+
+    position: relative;
+    z-index: 0;
+    &::before{
+        position: absolute;
+        content: "";
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        transform: scaleX(0);
+        transform-origin: left;
+        transition: all 2s;
+        background:repeating-linear-gradient(to top left, rgb(250, 233, 3) 3%,rgb(61, 232, 255) 19%);
+        z-index: -1;
+    }
+    
+}
+// .card:hover 
+.card:hover::before{
+    transform: scaleX(1);
+}
+
+
+  #join{
+    background:linear-gradient(to left bottom,rgba(255, 251, 30,0.75)20%,rgba(235, 255, 59,0.75)20%,rgba(201, 0, 201, 0.9)20%,rgba(201, 0, 201, 0.9)85%,rgba(255, 251, 30,0.75)85%) , url(../img/27.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    .pctext2{
+        margin: 0 auto;
+        width: 80%;
+        font-family: $body-text;
+        font-weight: 600;
+        color:$color3;
+        font-size: 18px;
+    }
+}
+.btn-lg{
+    position: relative;
+    z-index: 0;
+    &::before{
+        position: absolute;
+        content: "";
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        transform: scaleX(0);
+        transform-origin: left;
+        transition: all 1.5s;
+        background:linear-gradient(to left,rgb(2, 233, 250)10%,yellow 45%,$color1 75%);
+        z-index: -1;
+    }
+    &:hover::before{
+        transform: scaleX(1);
+    }
+}
+#how{
+    background:linear-gradient(to left top,rgba(19, 63, 207, 0.75)20%,rgba(10, 94, 204, 0.75)40%,rgba(0, 94, 201, 0.9)40%,rgba(0, 41, 129, 0.9)85%,rgba(41, 19, 163, 0.75)85%) , url(../img/31.jpg);
+    background-size: cover;
+
+    background-attachment: fixed;
+    .h2{
+        color: rgb(245, 219, 133);
+    }
+    .pctext2{
+        margin: 0 auto;
+        width: 80%;
+        font-family: $body-text;
+        font-weight: 600;
+        color:rgb(245, 219, 133);
+        font-size: 18px;
+    }
+}
+#Team{
+    background:linear-gradient(to left top,rgba(19, 169, 207, 0.75)20%,rgba(57, 129, 223, 0.75)40%,rgba(124, 173, 230, 0.9)40%,rgba(119, 155, 233, 0.9)85%,rgba(110, 92, 211, 0.75)85%) , url(../img/team.jpg);
+    background-size: cover;
+
+    background-attachment: fixed;
+    .pctext2{
+        margin: 0 auto;
+        width: 80%;
+        font-family: $body-text;
+        font-weight: 600;
+        color:rgb(245, 219, 133);
+        font-size: 18px;
+    }
+    
+    .card{
+    
+        color: #fff;
+        font-family: $navlink-font;
+        transition: all 2s;
+      .card-body{
+        position: relative;
+          overflow: hidden;
+          transition: all 2s;
+          &::before{
+            
+            z-index: -1;
+             position: absolute;
+             content: "";
+             top: 0;
+             left: 0;
+             width: 100%;
+             height: 120%;
+             transform: scaleX(1) rotate(7deg) translateY(-1rem);
+             background:repeating-linear-gradient(to left top,rgb(78, 181, 250) 4%,rgb(163, 20, 220) 14%);
+             transition: all 2s;
+         }
+        
+      } 
+      &:hover .card-body::before{
+        transform: scaleX(1.5) rotate(30deg);
+    }
+    &:hover .card-body{
+        color: $color5;
+        .fa{
+            color: rgb(255, 251, 0);
+        }
+    }
+      z-index: 0;
+     
+      .card-img{
+       
+      
+        padding-bottom: 5rem;
+        transform: scale(2);
+        margin-bottom: -5rem;
+    }
+        background:repeating-linear-gradient(to left top,rgb(255, 0, 234) 4%,rgb(163, 20, 220) 14%);
+        
+       
+    }
+    #m1{
+        transform: scale(4);
+        margin-bottom: -5rem !important;
+    }
+}
+#Contact{
+    background:linear-gradient(to left top,rgba(25, 19, 27, 0.75)20%,rgba(17, 11, 17, 0.75)40%,rgba(78, 79, 80, 0.9)40%,rgba(83, 83, 83, 0.9)85%,rgba(98, 97, 99, 0.75)85%) , url(../img/contact.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    .h2{
+        font-family: $home-pic-h1;
+        font-weight: 600;
+        letter-spacing: 4px;
+        color: $color1;
+        padding-top: 3rem;
+        font-size: 6rem;
+    }
+    .fa{
+        color: $color1;
+    }
+    .form-control{
+        background: $color1;
+    }
+}
+footer{
+    background:repeating-linear-gradient(to left,rgb(243, 246, 250)2%,rgb(221, 230, 255)15%) ;
+
+ .fa {
+     transition: all 0.2s;
+     color: $color4;
+     text-decoration: none;
+ &:hover{
+    text-decoration: none;
+     color: rgb(118, 118, 248);
+     cursor: pointer;
+ }
+}
+}
+@media(max-width:1198px){
+    .navbar-toggler{
+        display: initial !important;
+    }
+   .fa-bars{
+       font-size: $bars;
+       transform: rotate(0deg);
+       transition: all 2s;
+       &:hover,&:focus .navbar-toggler{
+           transform: rotate(90deg);
+           background-color: rgb(128, 227, 240);
+           padding: 1rem;
+           border-radius: 4px;
+           
+       }
+   }
+   
+     #nav,.color #nav{
+         display:initial;
+         .q{
+             display: block;
+            justify-content: space-between;
+          }
+     
+       
+     }
+    .q{
+        transition: all 2s;
+        .fa-times{
+            position: relative;
+            transform: rotateX(0deg);
+            transition: all 2s;
+        }
+       &:hover.fa-times{
+           transform: rotateX(360deg);
+
+       }
+    }
+    .navbar-nav.q#nav{
+        background: linear-gradient(to left top, rgba(253, 250, 250,0.8)50%,rgba(253, 250, 230,0.7) 50%);
+        z-index: 1;
+        position: absolute;
+        top: 90px;
+        left: 0;
+       
+        width: 10rem;
+        li{
+            list-style: none;
+            a{
+                position: relative;
+                padding-left: 2rem;
+                text-decoration: none;
+                color: $color1;
+                font-family: $navlink-font;
+                font-size: 18px;
+            
+            }
+        }
+        
+     li a.active, a.nav-link{
+        position: relative;
+        z-index: 0;
+        margin: 4px 0;
+        transition: all 2s;
+        &::before{
+            position: absolute;
+            content: "";
+            border-radius: 0;
+            top: 0;
+            left: 0;
+            width: 4%;
+            z-index: -4 ;
+            height: 100%;
+            background:    linear-gradient(to left top,rgb(36, 136, 250)45%,rgb(27, 126, 236)45%);
+            border-bottom: none !important;
+            transition: background 2s;
+           
+            transform: scaleX(1);
+            transform-origin: left;
+         }
+        
+     }
+     a.nav-link::before{
+         transform: scaleX(0);
+
+         transition: all 2s;
+     }
+     a.nav-link:hover::before{
+                
+        transform: scaleX(1);
+       width: 100% !important;
+       z-index: -4 !important;
+    }
+    a.nav-link:hover{
+        color: $color4;
+    }
+   
+          li a.active{
+            color: $color4;
+            position: relative;
+            transition: all 0.5s ease-in;
+            border: 0;
+            &::before{
+                position: absolute;
+                content: "";
+                top: 0;
+                left: 0;
+                width:100%;
+                border-radius: 0;
+                height: 100%;
+                background:    linear-gradient(to left top,rgb(36, 136, 250)45%,rgb(27, 126, 236)45%);
+                border-bottom: none;
+                transition: all 2s !important;
+           
+                transform: scaleX(1);
+                transform-origin: left;
+             }
+            
+             
+          
+          }
+    }
+    .navbar{
+        .color{
+            background-color: none;
+        }
+        background:repeating-linear-gradient(to left,rgb(255, 255, 255)10%,rgb(205, 208, 250)50%)
+    }
+    .fa-bars{
+        color: rgb(248, 224, 6);
+    }
+}
+@media(max-width:550px){
+.h1,.h2,.title{
+    font-size: 2rem !important;
+}
+.container{
+    width:80%;
+    margin: 0 auto;
+    
+}
+footer .fa{
+    font-size: 15px;
+    margin: 0 3px !important;
+}
+footer{
+    text-align: center;
+}
+.card{
+    font-size: small;
+}
+.card-title{
+    font-size: 2rem;
+}
+.textpc,.pctext2{
+    font-size: 10px !important;
+}
+}
